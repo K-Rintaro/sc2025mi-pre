@@ -50,7 +50,7 @@ $ cargo run
 
 > [!TIP]
 > 拡張機能を入れていない標準状態の Visual Studio Code には、Rust 向けの型検査や構文チェック（静的解析）は含まれていません。そのためコンパイルの段階でエラーを確認することとなります。これでは少々不便ですので、必須ではございませんが、拡張機能「rust-analyzer」をインストールいただくことを推奨します。下図の通り、Remote - SSHと同様にExtensionsから導入可能です。
-><img alt="Image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/70018855/497569560-e9b56e27-eec2-4e6f-8f72-94a392143f2d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251005T165547Z&X-Amz-Expires=300&X-Amz-Signature=d2cdc03ff406f93d2765179988e083c4bd742e485ab94ade82b8cd64ea16aad3&X-Amz-SignedHeaders=host"/>
+><img alt="Image" src="https://github.com/user-attachments/assets/1609ff3c-ada1-45ce-bdb1-b248da33a5ef"/>
 
 ### 3. パケットキャプチャの準備と練習
 
@@ -78,7 +78,7 @@ $ sudo safe_tcpdump ens5
 
 PCAPファイルのダウンロード方法は下図の通りです。
 
-<img alt="Image" width="70%"  src="https://github-production-user-asset-6210df.s3.amazonaws.com/70018855/497573871-26377b0e-14df-43d3-be1c-a8af0bf66424.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251005T175244Z&X-Amz-Expires=300&X-Amz-Signature=a940fc4ba63b03a0e4175095cc699be51432a5058c785f429f5bc109ea42cbff&X-Amz-SignedHeaders=host" />
+<img alt="Image" width="70%"  src="https://github.com/user-attachments/assets/c7efcfa8-f359-411c-a6e4-66ec5f3ffa8d" />
 
 Visual Studio Codeで`tcpdump`ディレクトリを開き、該当するPCAPファイルを右クリック、Downloadを選択すると、任意のフォルダにダウンロードすることができます。
 
@@ -88,11 +88,11 @@ Visual Studio Codeで`tcpdump`ディレクトリを開き、該当するPCAPフ�
 
 下図の通り、ダウンロードしたPCAPファイルをWiresharkで開きます。
 
-<img alt="Image" width="70%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/70018855/497575505-d23f5732-aaad-4132-a0f0-5479c171b06e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251005T181329Z&X-Amz-Expires=300&X-Amz-Signature=5c6eb1e69311bc1170c38644346dbd6a2d3a08ff8ddbddd5a31a41319387d1d1&X-Amz-SignedHeaders=host" />
+<img alt="Image" width="70%" src="https://github.com/user-attachments/assets/606bf7b7-5333-4914-8fc5-9dc80b7a2f71" />
 
 Wiresharkが起動すると、キャプチャした様々なパケットの構造が一目で確認できることが分かります。
 
-<img alt="Image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/70018855/497576427-a8b24dfb-a85b-436b-8083-d7fcc0128cde.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251005T182538Z&X-Amz-Expires=300&X-Amz-Signature=65f293aa1c04110dc57af04f8f6d1bf7f85b26965db0047d3b6b194b7777f219&X-Amz-SignedHeaders=host" />
+<img alt="Image" src="https://github.com/user-attachments/assets/736fe316-5a7a-4c92-9a43-5eb6364049ec" />
 
 画面上部の入力欄（表示フィルタ）で特定のポートの通信（例: 8080番, 443番など）や、特定のプロトコルの通信（例: SSH, socksなど）を指定することができます。この講義ではWiresharkの使用方法はあまり重要ではありませんので、`tcp.port == ポート番号`ならびに`socks`などでポート指定、プロトコル指定ができることが確認できれば全く問題ございません。
 
